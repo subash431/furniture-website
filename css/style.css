@@ -214,7 +214,7 @@ button {
     padding-top: -3rem;
    
     border-radius: 1rem;
-    box-shadow: 5px 5px 5px rgba(127, 126, 126, 0.533);
+    /* box-shadow: 5px 5px 5px rgba(127, 126, 126, 0.533); */
     line-height: 1.5rem;
    
     
@@ -415,7 +415,7 @@ hr{
     padding: 2rem;
     border: 1px solid #8888;
     gap: 2rem;
-    box-shadow: 5px 5px 5px #8888;
+   
     background-color: #6da2a2;
     border-radius: 2rem;
 
@@ -624,8 +624,8 @@ hr{
   }
   .footer__container--items{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   .footer__container--items p{
     font-size: 2rem;
@@ -713,7 +713,7 @@ hr{
 
  /* responsive */
 
- @media only screen and (max-width:900px) {
+ @media only screen and (max-width:976px) {
     /* .nav__container{
         gap: 0rem;
     } */
@@ -743,6 +743,9 @@ hr{
 
       
     }
+    .nav__items{
+        margin: 0rem;
+    }
 
     .nav__items ul li a {
         color: #fff;
@@ -759,7 +762,7 @@ hr{
         left: 311px;
     }
     .left__section {
-        margin-top: 150px;
+        margin-top: 50px;
         margin-left: 0rem;
     }
     .left__section h1 {
@@ -788,16 +791,70 @@ hr{
     .content_inside_active{
         flex-wrap: wrap;
     }
+    .popural__furniture--img {
+       
+        justify-content: center;
+       
+      
+        gap: 2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 0rem;
+    }
+    .popural__heading h1{
+       margin: 5rem;
+       margin-bottom: 1rem;
 
+    }
+    .member__sectiom{
+        padding: 2rem;
+    }
+    
+
+ }
+
+ @media only screen and (max-width:800px){
+    .sofa img {
+        position: absolute;
+        height: 300px;
+        top: 349px;
+        left: 115px;
+    }
+    .company__link{
+        gap: 4rem;
+    }
+    .company__section{
+        padding: 2rem;
+    }
+    .links ul li a {
+        font-size: 12px;
+    }
+    .footer__container--items p{
+        font-size: 1rem;
+    }
+    .logo__links-img >img {
+        height: 2rem;
+       
+        
+    }
+    .logo__links-img{
+        gap: 1rem;
+    }
+    .logo__links h1{
+        font-size: 1.5rem;
+    }
+    .logo__links{
+        gap: 1rem;
+    }
  }
 
 
  @media only screen and (max-width:600px){
     .sofa img {
         position: absolute;
-        height: 276px;
-        top: 362px;
-        left: 169px;
+        height: 253px;
+        top: 386px;
+        left: 39px;
     }
     .container{
         gap: 2rem;
@@ -806,7 +863,7 @@ hr{
         margin-left: 0rem;
     }
     .form__text--conatiner{
-        width: 54rem;
+        width: 100%;
     }
     .form__items {
         gap: 2rem;
@@ -849,15 +906,21 @@ hr{
         width: auto;
        
     }
+    .flex__container {
+        flex-direction: column;
+    }
+    .chair> img{
+        height: 9rem;
+    }
     
  }
 
  @media only screen and (max-width:400px){
     .sofa img {
         position: absolute;
-        height: 230px;
-        top: 411px;
-        left: 0px;
+        height: 152px;
+        top: 476px;
+        left: 22px;
     }
     .right__section img{
         display: none;
@@ -873,12 +936,28 @@ hr{
         margin-top: 10rem;
         margin-bottom: 1rem;
     }
+    .left__section p {
+        font-size: 1rem;
+       
+    }
+    .main__section{
+        justify-content: center;
+    }
+    .left__section{
+        width: 100%;
+        margin-left: 4rem;
+    }
     hr{
         margin-bottom: 0rem;
     }
+    .btn2, .btn {
+        width: 64%;
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
 
     .form__items--control >input {
-        width: 30rem;
+        width: 100%;
     }
 
     .flex__container >input {
@@ -893,25 +972,38 @@ hr{
         gap: 3rem;
     }
     .general__section--items img{
-        height: 14rem;
+        height: 9rem;
     }
     .general__section--items{
         align-items: center;
     }
     .member__container{
-        width: 35rem;
+        width: 100%;
     }
     .member__container h1 {
         font-size: 2rem;
+    }
+    .member__container img {
+        height: 8rem;
     }
     .member__container h2 {
         font-size: 1.5rem;
     }
     .form__text--conatiner {
-        width: 36rem;
+        width: 100%;
     }
+    .furniture_image img {
+        height: 16rem;
+    }
+    button{
+        width: 100%;
+    }
+    .menu button {
+        margin-top: 2rem;
+    }
+    
     .logo__links-img{
-        gap: 3rem;
+        gap: 1rem;
     }
     .chair> img{
         height: 6rem;
@@ -957,5 +1049,14 @@ hr{
     .footer_container >p{
         margin-top: 1rem;
         font-size: 1rem;
+    }
+    .form__text--conatiner {
+        padding: 1rem;
+    }
+    .form__text--conatiner p{
+        font-size: 1rem;
+    }
+    .left__section h1{
+        margin: 0rem;
     }
  }
